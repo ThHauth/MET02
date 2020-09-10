@@ -1,11 +1,11 @@
 $('form').submit(function(evt) {
   if (($('#inputPassword').val() === $('#inputConfirmPassword').val())) {
-    if($('#inputPassword').val() !== "" && $('#inputConfirmPassword').val()!== ""){
-      alert('Les mots de passe correspondent');
-      evt.preventDefault();
+    if($('#inputPassword').val() === "" && $('#inputConfirmPassword').val()=== ""){     
+      alert('Veuillez renseigner un mot de passe');
     }
     else{
-      alert('Veuillez renseigner un mot de passe');
+      alert('Les mots de passe correspondent');
+      evt.preventDefault();
     }
     
   }
