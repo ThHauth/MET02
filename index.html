@@ -1,65 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <link href="css/style.css" rel="stylesheet">
+  <title>MET02 - TP01</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <section>
-        <h1>Créer son compte client</h1>
-        <div>
-            <label>Nom : </label>
-            <input required="required" type="text"></input>
-        </div>
-        <div>
-            <label>Prénom : </label>
-            <input required="required" type="text"></input>
-        </div>
-        <div>
-            <label>Adresse : </label>
-            <input required="required" type="text"></input>
-        </div>
-        <div>
-            <label>Code postal (ex : 67100) : </label>
-            <input required="required" pattern="[0-9]{5}" type="text"></input>
-        </div>
-        <div>
-            <label>Ville : </label>
-            <input required="required" type="text"></input>
-        </div>
-        <div>
-            <label>Téléphone (ex : 0123456789) : </label>
-            <input required="required" pattern="[0-9]{10}" type="text"></input>
-        </div>
-        <div>
-            <label>Mail : </label>
-            <input required="required" type="email"></input>
-        </div>
-        <div>
-            <label>Civilité : </label>
-            <select>                
-                <option value="homme">Homme</option>
-                <option value="femme">Femme</option>
-                <option value="autre">Autre</option>
-            </select>
-        </div>
-        <div>
-            <label>Login : </label>
-            <input required="required" type="text"></input>
-        </div>
-        <div>
-            <label>Mot de passe : </label>
-            <input required="required" type="password"></input>
-        </div>
-        <button>Submit</button>
-    </section>
- 
-  
-
-</body>
-
+    <section>       
+        <form class="form-group col-md-12">
+            <h1>Créer son compte client</h1>
+            <div class="form-group">
+                <label for="inputAddress">Nom</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Prenom</label>
+                <input type="text" class="form-control" id="inputForname">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputCiv">Civilité</label>
+                <select id="inputCiv" class="form-control">
+                  <option selected>Madame</option>
+                  <option>Monsieur</option>
+                  
+                </select>
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6">
+                <label>Téléphone</label>
+                <input type="tel" class="form-control" id="inputPhone">
+              </div>
+            </div>           
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputAdresse">Adresse</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Code postal</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="ville">Ville</label>
+                <input id="inputVille" class="form-control"/>
+              </div>              
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Nom d'utilisateur</label>
+                  <input type="text" class="form-control" id="inputLogin">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Mot de passe</label>
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Confirmer le mot de passe</label>
+                    <input type="password" class="form-control" id="inputConfirmPassword">
+                  </div>
+              </div>  
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+        </section>
+    </body>
+    <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="myScript.js"></script>
 </html>
