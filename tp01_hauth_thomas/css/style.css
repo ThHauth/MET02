@@ -1,3 +1,46 @@
-#page {
-    background: linear-gradient(#e66465, #9198e5);
+.page{
+    background: rgb(101,101,101);
+    background: radial-gradient(circle, rgba(101,101,101,1) 0%, rgba(0,0,0,1) 100%); 
+}
+
+label{
+    font-weight: bold;
+    font-family: "Rubik";
+    color: white;
+}
+h1{
+    font-weight: bold;
+    font-family: "Rubik";
+    color: white;
+    font-size: x-large;
+}
+
+.signupField {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color:#9b1212;
+}
+
+.errorMessages {
+    color:#9b1212;
+}
+
+
+
+#civil{
+    padding: 0;
+}
+
+.form{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    max-height: 80%;
+    background-color: rgba(245, 245, 245, 0.2);
+    border-radius: 5em;
+    padding: 5%;
+}
+
+.title{
+    text-align: center;
 }
